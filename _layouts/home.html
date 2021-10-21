@@ -1,0 +1,25 @@
+---
+layout: home
+---
+
+{% include header.html %}
+{% include nav.html %}
+<main>
+
+    <!-- Jumbotron -->
+
+    {% include jumbotron.html %}
+
+    <!-- Content -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+
+</main>
+{% include analytics.html %}
+{% include footer.html %}
