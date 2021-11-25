@@ -1,48 +1,46 @@
-        <footer>
-            <div class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <ul class="list-group list-group-flush">
-                                {% for item in site.data.nav-footer-1.docs %}
-                                {% if item.url %}
-                                <li class="list-group-item"><a class="" href="{{ item.url }}">{{ item.title }}</a></li>
-                                {% endif %}
-                                {% endfor %}
-                            </ul>
-                        </div>
-                        <div class="col-sm-4">
-                            <ul class="list-group list-group-flush">
-                                {% for item in site.data.nav-footer-2.docs %}
-                                {% if item.url %}
-                                <li class="list-group-item"><a class="" href="{{ item.url }}">{{ item.title }}</a></li>
-                                {% endif %}
-                                {% endfor %}
-                            </ul>
-                        </div>
-                        <div class="col-sm-4">
-                            <ul class="list-group list-group-flush">
-                                {% for item in site.data.nav-footer-3.docs %}
-                                {% if item.url %}
-                                <li class="list-group-item"><a class="" href="{{ item.url }}">{{ item.title }}</a></li>
-                                {% endif %}
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <ul class="list-unstyled">
+                        {% for item in site.data.nav-footer-1.docs %}
+                        {% if item.url %}
+                        <li><a class="" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p><a href="{{ site.baseurl }}/">{{ site.title }}</a></p>
-                        </div>
-                    </div>
+                <div class="col-sm-4">
+                    <ul class="list-unstyled">
+                        {% for item in site.data.nav-footer-2.docs %}
+                        {% if item.url %}
+                        <li><a class="" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="list-unstyled">
+                        {% for item in site.data.nav-footer-3.docs %}
+                        {% if item.url %}
+                        <li><a class="" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
-        </footer>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p><a href="{{ site.baseurl }}/">{{ site.title }}</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+{% include js.html %}
+</body>
 
-        {% include js.html %}
-
-        </body>
-
-        </html>
+</html>

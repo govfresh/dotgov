@@ -1,0 +1,14 @@
+docs_list_title: faqs
+docs:
+
+ - title: How much is a .gov domain? 
+   description: .gov domains are free to all U.S. based government entities.
+   id: how
+   heading: how-faq
+
+ - title: What are prohibitive activities of a .gov domain? 
+   description: <strong>Commercial purposes.</strong> A .gov domain must not be used for commercial purposes, such as advertising benefitting private individuals or entities. <strong>Political campaigns.</strong> A .gov domain must not be used for political campaign purposes. <strong>Illegal content.</strong> A .gov domain must not be used to distribute or promote material whose distribution violates applicable law. <strong>Malicious cyber activity.</strong> .gov is a trusted and safe space. .gov domains must not distribute malware, host open redirects, or otherwise engage in malicious cyber activity.
+   id: what-prohibitive
+   heading: what-prohibitive-faq
+
+
