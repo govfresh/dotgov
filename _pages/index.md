@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Get your .gov domain.
+title: Get a .gov domain.
 description: All U.S. government websites should end in .gov.
 
 # Who
@@ -19,7 +19,7 @@ what-description: The <a href="https://dotgov.gov">DotGov program</a> is the ser
 
 why-head: Why
 why-icon: "fa-solid fa-circle-check"
-why-description: A .gov domain verifies a website belongs to an official government organization in the United States.
+why-description: A .gov domain verifies a website belongs to an official United States government organization.
 
 # How
 
