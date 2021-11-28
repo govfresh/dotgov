@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Get a .gov domain.
+title: Go .gov
 description: All U.S. government websites should end in .gov.
 
 # Who

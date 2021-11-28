@@ -36,11 +36,31 @@
     border: var(--size-1) var(--color-1) solid !important;
 }
 
+/* Buttons */
+
 button.btn-link {
     color: var(--color-1);
     font-size: var(--size-4);
     font-weight: var(--weight-2);
 
+}
+
+/* Forms */
+
+.form-control {
+    border: var(--size-13) solid var(--color-3);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--color-4);
+}
+
+.btn-outline-dark {
+    border-color: var(--color-3);
+}
+
+.btn-outline-dark>i {
+    color: var(--color-2) !important;
 }
 
 /* GoDotGov */
