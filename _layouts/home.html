@@ -2,16 +2,11 @@
 layout: home
 ---
 
-{% include header.html %}
-{% include nav.html %}
+{% include header.html %} {% include nav.html %}
 <main>
-
     <!-- Jumbotron -->
-
     {% include jumbotron.html %}
-
     <!-- Why -->
-
     <div class="container section">
         <div class="row">
             <div class="col-sm-3 text-center">
@@ -23,9 +18,7 @@ layout: home
             </div>
         </div>
     </div>
-
     <!-- Who -->
-
     <div class="container section">
         <div class="row">
             <div class="col-sm-3 text-center">
@@ -33,19 +26,17 @@ layout: home
             </div>
             <div class="col-sm-9">
                 <h2>{{ page.who-head }}</h2>
-                <p>Only U.S.-based government and public sector organizations are eligible to obtain a .gov domain,
-                    including any:</p>
+                <p>Only U.S.-based government and public sector organizations are eligible to obtain a .gov domain, including any:</p>
                 <ul>
-                    <li>federal, state, local, or territorial government entity, or other publicly controlled entity
+                    <li>
+                        federal, state, local, or territorial government entity, or other publicly controlled entity
                     </li>
                     <li>tribal government recognized by the federal government or a state government</li>
                 </ul>
             </div>
         </div>
     </div>
-
     <!-- What -->
-
     <div class="container section">
         <div class="row">
             <div class="col-sm-3 text-center">
@@ -57,9 +48,7 @@ layout: home
             </div>
         </div>
     </div>
-
     <!-- How -->
-
     <div class="container section">
         <div class="row">
             <div class="col-sm-3 text-center">
@@ -69,18 +58,16 @@ layout: home
                 <h2>{{ page.how-head }}</h2>
                 <ol>
                     <li>Complete and submit your authorization letter.</li>
-                    <li>DotGov will review, verify and create .gov registrar accounts for each point of
-                        contact.</li>
-                    <li>Point of contacts login to set up DotGov accounts (one POC must complete the online domain
-                        request form).</li>
+                    <li>
+                        DotGov will review, verify and create .gov registrar accounts for each point of contact.
+                    </li>
+                    <li>Point of contacts login to set up DotGov accounts (one POC must complete the online domain request form).</li>
                     <li>DotGov will review/approve your request.</li>
                 </ol>
             </div>
         </div>
     </div>
-
     <!-- Go -->
-
     <div class="container">
         <div class="row">
             <div class="col-sm-3 text-center">
@@ -88,21 +75,14 @@ layout: home
             </div>
             <div class="col-sm-9">
                 <h2>{{ page.go-head }}</h2>
-                <ul>
-                    <li><a href="#navbar">Check .gov
-                            availability</a></li>
-                    <li><a href="https://home.dotgov.gov/registration/authorization-templates/">Complete
-                            authorization letter</a> (send to <a href="mailto:registrar@dotgov">registrar@dotgov</a>)
-                    </li>
-                </ul>
+                <p><a href="#navbar">
+                            Check .gov availability.
+                        </a></p>
             </div>
         </div>
     </div>
-
     <div class="help">
-
         <!-- FAQs -->
-
         <div class="container section2">
             <div class="row">
                 <div class="col-sm-12">
@@ -112,15 +92,24 @@ layout: home
                         <div class="card">
                             <div class="card-header" id="{{ item.heading }}">
                                 <h3>
-                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                        data-toggle="collapse" data-target="#{{ item.id }}" aria-expanded="false"
-                                        aria-controls="{{ item.id }}">
+                                    <button
+                                        class="btn btn-link btn-block text-left collapsed"
+                                        type="button"
+                                        data-toggle="collapse"
+                                        data-target="#{{ item.id }}"
+                                        aria-expanded="false"
+                                        aria-controls="{{ item.id }}"
+                                    >
                                         {{ item.title }}
                                     </button>
                                 </h3>
                             </div>
-                            <div id="{{ item.id }}" class="collapse" aria-labelledby="{{ item.heading }}"
-                                data-parent="#accordionExample">
+                            <div
+                                id="{{ item.id }}"
+                                class="collapse"
+                                aria-labelledby="{{ item.heading }}"
+                                data-parent="#accordionExample"
+                            >
                                 <div class="card-body">
                                     {{ item.description }}
                                 </div>
@@ -131,9 +120,7 @@ layout: home
                 </div>
             </div>
         </div>
-
         <!-- Call to action -->
-
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -143,36 +130,40 @@ layout: home
                         <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex align-items-stretch">
                             <div class="card">
                                 <div class="card-body">
-                                    <p><i class="{{ page.cta-icon1 }} {{ site.data.icons.md }}"></i></p>
+                                    <p>
+                                        <i class="{{ page.cta-icon1 }} {{ site.data.icons.md }}"></i>
+                                    </p>
                                     <h3>{{ page.cta-title1 }}</h3>
-                                    <p><a href="{{ page.cta-url1 }}"
-                                            class="stretched-link">{{ page.cta-description1 }}</a>
+                                    <p>
+                                        <a href="{{ page.cta-url1 }}" class="stretched-link">{{ page.cta-description1 }}</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        {% endif %}
-                        {% if page.cta-title2 %}
+                        {% endif %} {% if page.cta-title2 %}
                         <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex align-items-stretch">
                             <div class="card">
                                 <div class="card-body">
-                                    <p><i class="{{ page.cta-icon2 }} {{ site.data.icons.md }}"></i></p>
+                                    <p>
+                                        <i class="{{ page.cta-icon2 }} {{ site.data.icons.md }}"></i>
+                                    </p>
                                     <h3>{{ page.cta-title2 }}</h3>
-                                    <p><a href="{{ page.cta-url2 }}"
-                                            class="stretched-link">{{ page.cta-description2 }}</a>
+                                    <p>
+                                        <a href="{{ page.cta-url2 }}" class="stretched-link">{{ page.cta-description2 }}</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        {% endif %}
-                        {% if page.cta-title3 %}
+                        {% endif %} {% if page.cta-title3 %}
                         <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex align-items-stretch">
                             <div class="card">
                                 <div class="card-body">
-                                    <p><i class="{{ page.cta-icon3 }} {{ site.data.icons.md }}"></i></p>
+                                    <p>
+                                        <i class="{{ page.cta-icon3 }} {{ site.data.icons.md }}"></i>
+                                    </p>
                                     <h3>{{ page.cta-title3 }}</h3>
-                                    <p><a href="{{ page.cta-url3 }}"
-                                            class="stretched-link">{{ page.cta-description3 }}</a>
+                                    <p>
+                                        <a href="{{ page.cta-url3 }}" class="stretched-link">{{ page.cta-description3 }}</a>
                                     </p>
                                 </div>
                             </div>
@@ -182,9 +173,7 @@ layout: home
                 </div>
             </div>
         </div>
-
     </div>
-
 </main>
-{% include analytics.html %}
+{% include analytics.html %} 
 {% include footer.html %}

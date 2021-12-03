@@ -6,14 +6,15 @@
                 {% if page.description %}
                 <p class="lead">{{ page.description }}</p>
                 {% endif %}
-                <p>Search available .gov domains (example: <a href="https://dotgov.gov">dotgov.gov</a>): </p>
+                <p>Search available .gov domains (example: dotgov.gov): </p>
                 <form class="domain-form form-inline">
                     <div class="form-group">
-                        <input type="text" class="search-domains form-control form-control-lg">
-                        <button type="submit" class="btn btn-outline-dark btn-lg ml-2"><i
+                        <input type="text" class="search-domains form-control form-control-lg mr-1">
+                        <button type="submit" class="btn btn-outline-dark btn-lg"><i
                                 class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                 </form>
+                <p><small>Source: <a href="https://dotgov.gov">dotgov.gov</a></small></p>
                 <div class="url-result"></div>
             </div>
         </div>

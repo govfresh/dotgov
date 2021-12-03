@@ -36,6 +36,15 @@
     border: var(--size-1) var(--color-1) solid !important;
 }
 
+.accordion .card-header {
+    background-color: var(--color-4);
+}
+
+.accordion h3 {
+    margin: var(--size-1);
+    padding: var(--size-1);
+}
+
 /* Buttons */
 
 button.btn-link {

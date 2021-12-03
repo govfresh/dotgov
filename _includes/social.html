@@ -1,0 +1,4 @@
+<!-- Footer -->
+
+{% if include.size == "footer" %} {% for item in site.data.connect.docs %} {% if item.url %}
+<a href="{{ item.url }}" aria-label="{{ item.name }}"><i class="{{ item.icon }} {{ site.data.connect.sm }}"></i></a> {% endif %} {% endfor %} {% endif %}
