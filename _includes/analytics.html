@@ -1,6 +1,13 @@
 {% if jekyll.environment == "production" %}
-{% if site.google_analytics_id -%}
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3D22NYKCPV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-{% endif -%}
+  gtag('config', 'G-3D22NYKCPV');
+</script>
+
 {% endif %}
